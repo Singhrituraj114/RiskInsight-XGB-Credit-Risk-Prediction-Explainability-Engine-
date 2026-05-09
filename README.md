@@ -4,6 +4,12 @@ This project is a **credit risk prediction web app**.
 You enter applicant financial details, and the app predicts the chance of default using an XGBoost model.  
 It also explains *why* the model predicted that result using SHAP.
 
+## Full detailed documentation
+
+For complete end-to-end details (pipeline, preprocessing, feature engineering, model logic, explainability flow, and what was implemented), read:
+
+- **[README_DETAILED.md](README_DETAILED.md)**
+
 ## What this project does
 
 1. Takes borrower inputs (age, income, debt ratio, late payments, etc.).
