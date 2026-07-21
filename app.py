@@ -42,8 +42,23 @@ html, body, [class*="css"], .stApp {
 }
 
 /* Custom Sliders */
-.stSlider > div > div > div { background: rgba(0,212,255,0.15) !important; }
-.stSlider > div > div > div > div { background: #00D4FF !important; box-shadow: 0 0 10px rgba(0,212,255,0.5); }
+.stSlider > div > div > div:not([data-testid="stSliderTickBar"]) { background: rgba(0,212,255,0.15) !important; }
+.stSlider > div > div > div > div:not([data-testid="stSliderThumbValue"]) { background: #00D4FF !important; box-shadow: 0 0 10px rgba(0,212,255,0.5); }
+div[data-testid="stSliderThumbValue"] {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #00D4FF !important;
+    font-family: 'Space Mono', monospace !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+}
+div[data-testid="stSliderTickBar"] { background: transparent !important; }
+div[data-testid="stSliderTickBar"] p {
+    color: #8892B0 !important;
+    font-family: 'Space Mono', monospace !important;
+    font-size: 11px !important;
+    margin: 0 !important;
+}
 div[data-testid="stSlider"] label {
     color: #8892B0 !important;
     font-family: 'Space Mono', monospace !important;
